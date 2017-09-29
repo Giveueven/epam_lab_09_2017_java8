@@ -83,6 +83,7 @@ public class Lambdas01 {
             person.print();
         }
 
+        // Asserts
         assertNotNull(person);
         assertEquals(new Person("name 1", "lastName 2", 40), person);
     }
@@ -106,6 +107,8 @@ public class Lambdas01 {
 
         if (personOptional.isPresent()) {
             personOptional.get().print();
+            assertNotNull(personOptional.get());
+            assertEquals(new Person("name 1", "lastName 2", 40), personOptional.get());
         }
     }
 
