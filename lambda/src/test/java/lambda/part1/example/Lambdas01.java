@@ -117,7 +117,6 @@ public class Lambdas01 {
                 new Person("name 2", "lastName 1", 30)
         );
 
-        
         final Map<String, Person> personByLastName =
                 FluentIterable.from(persons)
                         .uniqueIndex(new Function<Person, String>() {
